@@ -15,4 +15,7 @@ config SOC_STM32L072XZ
 config SOC_STM32L073XZ
 	bool "STM32L073XZ"
 
+config SOC_STM32L053X8
+	bool "STM32L053X8"
+
 endchoice
