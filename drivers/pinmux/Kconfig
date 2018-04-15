@@ -46,6 +46,13 @@ config PINMUX_QMSI
 	help
 	  Enables the pinmux dev driver for QMSI supported boards.
 
+config PINMUX_SWD
+	bool "Configure pinmux for SWD debugging"
+	depends on PINMUX
+	default n
+	help
+	  Configure pinmux to enable SWD debugging.
+
 source "drivers/pinmux/Kconfig.mcux"
 
 source "drivers/pinmux/Kconfig.mcux_lpc"
